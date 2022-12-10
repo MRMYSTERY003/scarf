@@ -1,0 +1,93 @@
+*{
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.gauge-container{
+    background-image: none;
+    width: 15%;
+    height: 15;
+}
+
+
+.gauges{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.h-text{
+    font-size: 25px;
+    color: #ffffff;
+
+}
+
+.heart-rate {
+    width: 150px;
+    height: 73px;
+    position:relative;
+    margin: 20px auto;
+  }
+
+
+.fade-in {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(22, 76, 238);
+    top: 0;
+    right: 0;
+    animation: heartRateIn 2.5s linear infinite;
+  }
+
+  .fade-out {
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    top: 0;
+    left: -120%;
+    animation: heartRateOut 2.5s linear infinite;
+    background: rgb(22, 76, 238);
+    background: -moz-linear-gradient(left, rgb(22, 76, 238) 0%, rgb(22, 76, 238) 50%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(left, rgb(22, 76, 238) 0%, rgb(22, 76, 238) 50%, rgba(0, 0, 0, 0) 100%);
+    background: -o-linear-gradient(left, rgb(22, 76, 238) 0%, rgb(22, 76, 238) 50%, rgba(0, 0, 0, 0) 100%);
+    background: -ms-linear-gradient(left, rgb(22, 76, 238) 0%, rgb(22, 76, 238) 50%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to right, rgb(22, 76, 238) 0%, rgb(22, 76, 238) 80%, rgba(0, 0, 0, 0) 100%);
+  }
+
+
+  @keyframes heartRateIn {
+    0% {
+      width: 100%;
+    }
+    50% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  @keyframes heartRateOut {
+    0% {
+      left: -120%;
+    }
+    30% {
+      left: -120%;
+    }
+    100% {
+      left: 0;
+    }
+  }
+
+
+
+
+
+
+
+

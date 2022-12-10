@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCARF</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/gauge.css" />
+    <link rel="stylesheet" href="style/temp.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" ></script>
+    
+
+
+</head>
+<body>
+
+    <div class="head-cont">
+        <h2>SCARF</h2>
+    </div>
+
+
+    <div class="gauge-cont">
+
+        <div class="temperature-cont">
+
+            <div id="t_gauge">
+                <div id="major-ticks">
+                    <span>0℃</span>
+                    <span>25℃</span>
+                    <span>50℃</span>
+                </div>
+                <div id="minor-ticks">
+                    <span title="--i:1"></span>
+                    <span title="--i:2"></span>
+                    <span title="--i:3"></span>
+                    <span title="--i:4"></span>
+                    <span title="--i:5"></span>
+                    <span title="--i:6"></span>
+                    <span title="--i:7"></span>
+                    <span title="--i:8"></span>
+                    <span title="--i:9"></span>
+                    <span title="--i:10"></span>
+                    <span title="--i:11"></span>
+                    <span title="--i:12"></span>
+                    <span title="--i:13"></span>
+                    <span title="--i:14"></span>
+                    <span title="--i:15"></span>
+                    <span title="--i:16"></span>
+                    <span title="--i:17"></span>
+                    <span title="--i:18"></span>
+                    <span title="--i:19"></span>
+                    <span title="--i:20"></span>
+                </div>
+                <div id="bottom-circle"></div>
+                <svg version="1.1" baseProfile="full" width="190" height="190" id="gsvg" xmlns="http://www.w3.org/2000/svg">
+                    <linearGradient id="gradient" x1="0" x2="1" y1="0" y2="0">
+                        <stop offset="0%" stop-color="#9b37f8ec"/>
+                        <stop offset="100%" stop-color="#fd0f0fe5"/>
+                    </linearGradient>
+                    <path d="M5 95 A80 80 0 0 1 185 95" stroke=url(#gradient) fill="none" stroke-width="10" id = 'temp'
+                    stroke-linecap="round" stroke-dasharray="0 282.78"/>
+                </svg>
+                <div id="center-circle">
+                    <span id="name">Temperature</span>
+                    <span id="temperature">10</span>
+                    <img src="src/leaf.svg" alt="">
+                </div>
+        
+            </div>
+
+        </div>
+
+        <div class="contentes">
+            <h2>Envionment Factors</h2>
+        </div>
+
+        <div class = 'gauges'>
+            <div id="od" class="gauge-container" style="text-align: center;">Optical Density</div> 
+            <div id="hu" class="gauge-container" style="text-align: center;">Humidity</div>
+            <div id="li" class="gauge-container" style="text-align: center;">Light Intensity</div>
+        </div>
+    </div>
+
+
+
+    <div class="chart-cont">
+        <div class="contentes">
+            <h2>Co2 Monitoring</h2>
+        </div>
+        <canvas id="myChart"></canvas>
+    </div>
+      
+
+      <script type="module" src="./script/script.js"></script>
+      <script type="module" src="./script/temp.js"></script>
+      <script type="module" src="./src/gauge.js"></script>
+      <script type="module" src="./script/test.js"></script>
+      <script type="module" src="./script/fbase.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+
+*{
+    background-color: black;
+}
+
+.gauge-cont{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.contentes{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.chart-cont{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+.temperature-cont{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.head-cont{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
