@@ -41,7 +41,7 @@ onValue(co2, (snapshot) => {
   labels: labels,
   datasets: [
     {
-      label: 'Carbon dioxide conectration',
+      label: 'Carbon dioxide concentration',
       data: datapoints,
       fill: false,
       cubicInterpolationMode: 'monotone',

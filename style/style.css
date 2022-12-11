@@ -20,6 +20,10 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    width: 60%;
+    height: auto;
+    margin:auto;
+
 }
 
 
