@@ -2,7 +2,7 @@ import { onValue, te } from "./fbase.js";
 
 
 const g_min = 0;
-const g_max = 50;
+const g_max = 75;
 let val = 34.6;
 
 const arc = document.getElementById("temp");
